@@ -100,7 +100,7 @@ def choose_param(cmd_value, cfg, key, default):
 work_minutes = choose_param(args.work, cfg, 'work_minutes', 50)
 rest_minutes = choose_param(args.rest, cfg, 'rest_minutes', 10)
 cycles = choose_param(args.cycles, cfg, 'cycles', 0)
-print(f"{work_minutes} ， {rest_minutes} ， {cycles}")
+# print(f"{work_minutes} ， {rest_minutes} ， {cycles}")
 
 # ↑↑↑↑↑ 参数部份完成 ↑↑↑↑↑
 
