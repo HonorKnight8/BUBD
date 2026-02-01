@@ -1,7 +1,7 @@
 # 基础设置
-work_minutes = 2
-rest_minutes = 2
-cycles = 2
+work_minutes = 50
+rest_minutes = 10
+cycles = 0
 
 # work 工作时间
 # rest 小憩时间
