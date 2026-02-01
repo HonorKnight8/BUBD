@@ -1,0 +1,19 @@
+# 基础设置
+work_minutes = 2
+rest_minutes = 2
+cycles = 2
+
+# work 工作时间
+# rest 小憩时间
+# cycles 循环次数，0代表无限循环
+
+# “铃声”设置
+work_bell = "brain-implant-cyberpunk-sci-fi-trailer-action-intro-330416.mp3"
+work_bell_volume = 75
+rest_bell = "background-music-new-age-nature-465069.mp3"
+rest_bell_volume = 75
+bell_duration = 30
+
+# work_bell 和 rest_bell ，铃声文件，放置于 sounds 文件夹中
+# work_bell_volume 和 rest_bell_volume ，自定义铃声音量，数值：1-100
+# bell_duration ，自定义铃声播放时间，数值：1-60，单位：秒
