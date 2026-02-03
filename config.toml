@@ -1,4 +1,5 @@
 # 基础设置
+starttype = "work"
 work_minutes = 50
 rest_minutes = 10
 cycles = 0

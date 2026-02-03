@@ -1,11 +1,9 @@
-
-# 加载 pygame ，用于播放 mp3（优先），若未安装则使用 winsound 或蜂鸣声
 import os
 import sys
 import time
 import winsound
 
-
+# 加载 pygame ，用于播放 mp3（优先），若未安装则使用 winsound 或蜂鸣声
 try:
     import pygame
 except Exception:
@@ -13,7 +11,7 @@ except Exception:
     print("pygame module not found. using winsound or beep instead.")
     # exit()
 
-def play_alert(sound_file: str = None, volume: float = None, duration: int = None):
+def play_alert(sound_file: str = None, volume: int = None, duration: int = None):
     """
     播放铃声：优先使用 pygame 播放指定文件（若存在）；
     否则回退到 winsound 或终端蜂鸣。
@@ -32,6 +30,8 @@ def play_alert(sound_file: str = None, volume: float = None, duration: int = Non
     # 尝试使用 pygame 播放文件
     if sound_file and pygame:
         # 解析相对路径（优先当前目录，其次 sounds/ 子目录）
+        # print(f"Attempting to play sound file: {sound_file}")
+        # print(pygame)
         candidate = sound_file
         if not os.path.isabs(candidate):
             # 脚本目录
